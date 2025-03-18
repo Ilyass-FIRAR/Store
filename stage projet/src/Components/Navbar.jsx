@@ -2,13 +2,19 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import imgfresher from './images/logo.avif'
 import "./Navbar.css"
+import SearchIcon from "@mui/icons-material/Search";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import LocalMallIcon from "@mui/icons-material/LocalMall";
+
 function Navbar() {
   return (
     <div>
         <div className='navbar_div'>
           <div>
             <input type="text" placeholder='Search here'/>
-            {/*SearchIcon*/}
+            <SearchIcon className="Search_icon_input"/>
+            <CloseIcon className="Close_icon_inpout"/>
             {/*closeIcon*/}
           </div>
           <div className='navbar_main'>
